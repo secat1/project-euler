@@ -1,13 +1,6 @@
 # Problem 1
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
-multiple = 1000
-a = 3
-b = 5
-multiple_list = []
-
-i = 1
-
 def sum_multiple(multiple, a, b):
     multiple_list = []
     i = 1
@@ -21,12 +14,13 @@ def sum_multiple(multiple, a, b):
               
         i += 1
     
-    
     # Compute sum of list content
     total = 0
     for i in multiple_list:
         total = total + i
     
+    # Print sum of list content
     print(f"The sum of all multiples of {a} or {b} less than {multiple} is: {total}") 
+
     
 sum_multiple(1000, 3, 5)
